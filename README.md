@@ -1,6 +1,9 @@
 # soundproof-backend-demo
 This is a repository for soundproof backend demo. Written in Golang
 
+-Ahmet Sargın
+-linked.in/ahmetsargin
+
 ## Running of the project
 
 Docker way:
