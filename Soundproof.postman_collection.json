@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "032a5d65-81a5-4bb7-a09c-b711ef405943",
+		"name": "Custom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23167348"
+	},
+	"item": [
+		{
+			"name": "soundproof-auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"husnu\",\n    \"password\": \"salgin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "soundproof-user/profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODczOTkwNDUsInVzZXJfaWQiOjF9.sG4uQYxgcomzg9UXwC9r_niu9zzU8SEq98MdmN1rTao"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/user/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT soundproof-user/profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2ODczOTkwNDUsInVzZXJfaWQiOjF9.sG4uQYxgcomzg9UXwC9r_niu9zzU8SEq98MdmN1rTao"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"signedStr\" : \"0x789a80053e4927d0a898db8e065e948f5cf086e32f9ccaa54c1908e22ac430c62621578113ddbb62d509bf6049b8fb544ab06d36f916685a2eb8e57ffadde02301\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/user/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "soundproof-auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"husnu\",\n    \"password\": \"salgin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/auth/register"
+			},
+			"response": []
+		}
+	]
+}
