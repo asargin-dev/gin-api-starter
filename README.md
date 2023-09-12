@@ -1,5 +1,5 @@
-# soundproof-backend-demo
-This is a repository for soundproof backend demo. Written in Golang
+# Gin & Gorm & PostgreSql Backend Starter
+This was a repository for a demo. Written in Golang
 
 -Ahmet Sargın
 -linked.in/ahmetsargin
